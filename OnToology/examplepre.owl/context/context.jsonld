@@ -1,0 +1,71 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "http://purl.org/dc/elements/1.1/abstract"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/elements/1.1/created"
+    },
+    "example" : {
+      "@id" : "http://purl.org/vocab/vann/example"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "citation" : {
+      "@id" : "http://schema.org/citation"
+    },
+    "Organization" : {
+      "@id" : "https://w3id.org/example#Organization"
+    },
+    "hasMentor" : {
+      "@id" : "https://w3id.org/example#hasMentor",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "author" : {
+      "@id" : "http://schema.org/author"
+    },
+    "foundedIn" : {
+      "@id" : "https://w3id.org/example#foundedIn",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "rationale" : {
+      "@id" : "http://www.linkedmodel.org/schema/vaem#rationale"
+    },
+    "hasMember" : {
+      "@id" : "https://w3id.org/example#hasMember",
+      "@type" : "@id"
+    },
+    "partOf" : {
+      "@id" : "https://w3id.org/example#partOf",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "Student" : {
+      "@id" : "https://w3id.org/example#Student"
+    },
+    "Researcher" : {
+      "@id" : "https://w3id.org/example#Researcher"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}
