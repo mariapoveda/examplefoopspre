@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Student" "base:Organization" "base:Researcher" ; /*classes style*/
+	"base:Organization" -> "xsd:date" [ label = "base:foundedIn" ];
+	"base:Student" -> "base:Researcher" [ label = "base:hasMentor" ];
+	"base:Researcher" -> "base:Organization" [ label = "base:partOf" ];
+	"base:Organization" -> "base:Researcher" [ label = "base:hasMember" ];
+
+}

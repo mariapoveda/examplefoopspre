@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/example#"
+     xml:base="https://w3id.org/example"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/example">
+        <dc:title xml:lang="en">The example ontology</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/created"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/example"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/author -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/author"/>
+    
+
+
+    <!-- http://schema.org/citation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/citation"/>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#rationale -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.linkedmodel.org/schema/vaem#rationale"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/example#hasMember -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/example#hasMember">
+        <rdfs:domain rdf:resource="https://w3id.org/example#Organization"/>
+        <rdfs:range rdf:resource="https://w3id.org/example#Researcher"/>
+        <rdfs:comment xml:lang="en">This example property indicates that an Organization has a Researcher as member</rdfs:comment>
+        <rdfs:label xml:lang="en">has member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/example#hasMentor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/example#hasMentor">
+        <rdfs:domain rdf:resource="https://w3id.org/example#Student"/>
+        <rdfs:range rdf:resource="https://w3id.org/example#Researcher"/>
+        <rdfs:comment xml:lang="en">This property links the students to the researcher who mentored them</rdfs:comment>
+        <rdfs:label xml:lang="en">has mentor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/example#partOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/example#partOf">
+        <rdfs:domain rdf:resource="https://w3id.org/example#Researcher"/>
+        <rdfs:range rdf:resource="https://w3id.org/example#Organization"/>
+        <rdfs:comment xml:lang="en">This property links instances from Researcher to Organization</rdfs:comment>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/example#foundedIn -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/example#foundedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/example#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Date when an organization was founded</rdfs:comment>
+        <rdfs:label xml:lang="en">founded in</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/example#Organization -->
+
+
+    <owl:Class rdf:about="https://w3id.org/example#Organization">
+        <vann:example xml:lang="en">University of Southern California</vann:example>
+        <rdfs:comment xml:lang="en">An organized body of people with a particular purpose, especially a business, society, association, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/example#Researcher -->
+
+
+    <owl:Class rdf:about="https://w3id.org/example#Researcher">
+        <vann:example xml:lang="en">An example using the Researcher class, e.g., Bob is a professor at the University of Southern California.</vann:example>
+        <vaem:rationale xml:lang="en">The reason why this concept was added to the ontology. This could reflect some agreement or use cases that may need to be reflected here. For example: The concept Researcher was added to the ontology to represent those authors of scientific publications that belong to a public institution.</vaem:rationale>
+        <rdfs:comment xml:lang="en">A definition of your class. For example, A researcher is a person who publishes scientific papers, writes research proposals and mentors students</rdfs:comment>
+        <rdfs:label xml:lang="en">Researcher</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/example#Student -->
+
+
+    <owl:Class rdf:about="https://w3id.org/example#Student">
+        <rdfs:comment xml:lang="en">Student is a class introduced in the version 1.0.1 of the ontology. </rdfs:comment>
+        <rdfs:label xml:lang="en">Student</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
